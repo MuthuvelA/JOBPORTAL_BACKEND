@@ -1,11 +1,12 @@
 const app = require("./app");
-const db = require("./config/db");
+const db = require('./config/db')
+const UserModel=require('./model/userModel')
+const port = process.env.PORT || 3002;
 
-const port = 3000;
-
-app.get('./',(req,res)=>{
-     res.send("HELLO WORLD!!!!!");
+app.get('/',(req,res)=>{
+     res.send("sdfa");
 });
+
 app.listen(port,()=>{
-console.log(`server listening in the port ${port}`);
+    console.log(`Server Listening on Port http://localhost:${port}`);
 });
