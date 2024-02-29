@@ -7,7 +7,6 @@ const userService = require('../server/userService');
 
 
         const sucessRes = await userService.userRegistration(username,email,password);
-        console.log(username,email,password);
         res.json({status:true,message:"successfully registered....!"});
         /*if(password===confirmPassword){
             const sucessRes = await userService.userRegistration(email,password);
