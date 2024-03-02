@@ -3,34 +3,33 @@ const db = require('../config/db');
 
 const { Schema } = mongo;
 
-const profileSchema = new Schema({
-    name: {
+const employeedetailSchema = new Schema({
+    companyname: {
         type: String,
         required: true
     },
-    email: {
+    employername: {
         type: String,
         required: true,
-        unique: true
     },
-    mobile: {
+    employermail: {
         type: String,
         required: true
     },
-    address: {
+    employermobile: {
         type: String,
         required: true
     },
-    currentWork: {
+    companyaddress: {
         type: String,
         required: true
     },
-    selectedSkill: {
+    employeedesignation: {
         type: String,
         required: true
     }
 });
 
-const ProfileModel = db.model("Profile", profileSchema);
+const EmployerDetailModel = db.model("EmployerDetails", employeedetailSchema);
 
-module.exports = ProfileModel;
+module.exports = EmployerDetailModel;
