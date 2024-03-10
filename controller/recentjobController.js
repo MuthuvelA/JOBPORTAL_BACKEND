@@ -4,7 +4,7 @@ exports.getRecentJobs = async (req, res, next) => {
     try {
         
         const recentJobs = await recentJobService.fetchRecentJobs();
-        console.log(recentJobs);
+        // console.log(recentJobs);
         
         res.status(200).json({ status: true, message: "Recent jobs fetched successfully", data: recentJobs });
     } catch (err) {
