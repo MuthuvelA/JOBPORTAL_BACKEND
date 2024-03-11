@@ -14,6 +14,10 @@ const recentJobSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  applicationLink:{
+    type: String,
+    required:true
+  }
 });
 
 const RecentJobModel = db.model('RecentJob', recentJobSchema, 'jobpostdetails');
