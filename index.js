@@ -1,6 +1,5 @@
 const app = require("./app");
 const db = require('./config/db')
-const UserModel=require('./model/userModel')
 const port = process.env.PORT || 3002;
 
 app.get('/',(req,res)=>{

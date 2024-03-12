@@ -9,7 +9,6 @@ class userService {
             throw err;
         }
     }
-
     static async userLogin(Username, Pass) {
         try {
             let user;
@@ -21,12 +20,7 @@ class userService {
         } catch (err) {
             throw err;
         }
-    }
-    
-
-    
-    
-    
+    }   
 }
 
 module.exports = userService;
